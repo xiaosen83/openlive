@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>OpenView.qml</file>
+        <file>OpenViewForm.ui.qml</file>
+        <file>Command.qml</file>
+        <file>CommandForm.ui.qml</file>
+    </qresource>
+</RCC>
