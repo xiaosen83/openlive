@@ -1,7 +1,7 @@
 import QtQuick 2.4
 
 CommandForm {
-    Keys.onReturnPressed:{
+    textCmd.Keys.onReturnPressed:{
         main.joinChannel("pqy")
     }
 }

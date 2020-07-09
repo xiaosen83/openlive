@@ -2,10 +2,10 @@ import QtQuick 2.9
 import QtQuick.Window 2.2
 
 Window {
+    //id: main
     visible: true
     width: 640
     height: 480
-    title: qsTr("Hello World")
     OpenView {
         x: 0
         y: 0
@@ -20,6 +20,7 @@ Window {
     }
 
     function joinChannel(channel) {
-        agoraRtcEngine.joinChannel(channel);
+       console.log("joinChannel:", channel);
+       agoraRtcEngine.joinChannel(channel);
     }
 }
