@@ -1,4 +1,4 @@
-QT += quick
+QT +=  core quickwidgets
 CONFIG += c++11
 
 # The following define makes your compiler emit warnings if you use
@@ -14,7 +14,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-    agorartcengine.cpp
+    agorartcengine.cpp \
+    mainwindow.cpp
 
 RESOURCES += qml.qrc
 
@@ -32,7 +33,8 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 DISTFILES +=
 
 HEADERS += \
-    agorartcengine.h
+    agorartcengine.h \
+    mainwindow.h
 
 win32: {
     INCLUDEPATH += $$PWD/sdk/include
