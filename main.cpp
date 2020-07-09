@@ -1,16 +1,15 @@
-#include <QGuiApplication>
-#include <QQmlApplicationEngine>
+#include <QApplication>
+#include "mainwindow.h"
 
 int main(int argc, char *argv[])
 {
-    QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
+    QApplication app(argc, argv);
+    app.setOrganizationName("Agora");
+    app.setOrganizationDomain("agora.io");
 
-    QGuiApplication app(argc, argv);
+    //qmlRegisterType<AVideoWidget>("AVideoWidget", 1, 0, "AVideoWidget");
 
-    QQmlApplicationEngine engine;
-    engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
-    if (engine.rootObjects().isEmpty())
-        return -1;
-
+    MainWindow w;
+    w.show();
     return app.exec();
 }
