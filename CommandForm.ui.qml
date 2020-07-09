@@ -4,8 +4,6 @@ Item {
     width: 400
     height: 400
 
-    //property alias textCmd: textCmd
-
     TextEdit {
         id: textCmd
         color: "#1a0000"
