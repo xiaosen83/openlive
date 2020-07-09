@@ -16,7 +16,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     AgoraRtcEngine* engine = m_engine.get();
     connect(engine, SIGNAL(joiningChannel()), this, SLOT(joiningChannel()));
-    connect(engine, SIGNAL(leavingChannel()), this, SLOT(leavingChannel()));
+    //connect(engine, SIGNAL(leavingChannel()), this, SLOT(leavingChannel()));
 
     m_contentView = new QQuickWidget(this);
     m_contentView->rootContext()->setContextProperty("agoraRtcEngine", engine);
@@ -28,6 +28,7 @@ MainWindow::MainWindow(QWidget *parent)
     layout->setContentsMargins(0, 0, 0, 0);
     layout->setSpacing(0);
     layout->addWidget(m_contentView);
+
 
     setLayout(layout);
 }

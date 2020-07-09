@@ -11,7 +11,7 @@ public:
     explicit AgoraRtcEngine(QObject *parent = 0);
     ~AgoraRtcEngine();
 
-    Q_INVOKABLE void joinChannel(const char* channel);
+    Q_INVOKABLE void joinChannel();
 
 private:
     void onJoinChannelSuccess(const char* channel, agora::rtc::uid_t userId, int elapsed) override;

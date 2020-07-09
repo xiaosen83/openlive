@@ -5,5 +5,6 @@
         <file>OpenViewForm.ui.qml</file>
         <file>Command.qml</file>
         <file>CommandForm.ui.qml</file>
+        <file>Command2.qml</file>
     </qresource>
 </RCC>

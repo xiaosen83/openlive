@@ -2,6 +2,7 @@ import QtQuick 2.9
 import QtQuick.Window 2.2
 
 Rectangle {
+    id:main
     visible: true
     width: 640
     height: 480
@@ -12,6 +13,7 @@ Rectangle {
         width: 640
         height: 300
     }
+
     Command {
         x: 0
         y: 300
@@ -20,6 +22,7 @@ Rectangle {
     }
 
     function joinChannel(channel) {
-        agoraRtcEngine.joinChannel(channel);
+        console.log("joinChannel in main.qml");
+        agoraRtcEngine.joinChannel();
     }
 }

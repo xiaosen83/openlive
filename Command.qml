@@ -1,7 +1,11 @@
 import QtQuick 2.4
 
 CommandForm {
-    Keys.onReturnPressed:{
-        main.joinChannel("pqy")
+    btGo.onClicked: {
+        console.log("testing...");
+        main.joinChannel()
     }
+//    Keys.onReturnPressed:{
+//        main.joinChannel("pqy")
+//    }
 }
